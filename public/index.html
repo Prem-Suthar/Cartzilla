@@ -7,6 +7,9 @@
     <link href="../css/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+<script>
+
+</script>
 
 <body class="font-display">
     <!-- nevbar --->
@@ -199,20 +202,34 @@
             </div>
         </div>
     </div>
-    
+
     <div class="lg:flex lg:mx-24 relative top-32 gap-3 pb-12 px-4 mt-4 mb-6 ">
-        <div class="relative max-sm:mb-6 lg:w-[526px] px-3">
+        <div class="relative max-sm:mb-6 lg:w-[526px] flex flex-col gap-3 px-3">
             <h2 class="lg:text-[56px] font-bold">Express yourself with a rainbow of colors</h2>
+
+            <button class="cursor-pointer"
+                onclick="document.getElementById('myImage').src='../imega/freshness.png'"><p class="bg-amber-100 w-3xl"></p> Freshness</button>
+
+            <button class="cursor-pointer"
+                onclick="document.getElementById('myImage').src='../imega/sunflower.png'">Sunflower</button>
+
+            <button class="cursor-pointer"
+                onclick="document.getElementById('myImage').src='../imega/heavenly.png'">Heavenly</button>
+
+            <button class="cursor-pointer"
+                onclick="document.getElementById('myImage').src='../imega/darkness.png'">Darkness</button>
+           
         </div>
 
         <div class="lg:w-[770px] flex flex-col items-center  rounded-2xl">
             <div class="">
                 <div class="ml-[110px] px-3">
-                    <img src="../imega/freshness.png" class=" mb-6" alt="">
+                    <img id="myImage" src="../imega/freshness.png">
                 </div>
             </div>
         </div>
     </div>
+
 
 </body>
 
